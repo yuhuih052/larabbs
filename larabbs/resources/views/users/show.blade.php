@@ -10,13 +10,13 @@
 					<strong>个人简介</strong>
 				</h5>
 				<p>
-				Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+				{{$user->introduction}}
 				</p>
 				<hr>
 				<h5>
 					<strong>注册于</strong>
 				</h5>
-				<p>Janua 01 1901</p>
+				<p>{{ $user->created_at->diffForHumans() }}</p>
 			</div>
 		</div>
 	</div>
