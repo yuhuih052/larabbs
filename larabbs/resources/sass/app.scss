@@ -113,8 +113,9 @@ body {
 .simditor-body img {
  max-width:100%;
 }
-
+/* Topic Show Page */
 @import "topic_body";
+
 .topics-show-page {
  .card {
  padding: 15px;
@@ -123,5 +124,7 @@ body {
  font-size: 28px;
  line-height: 38px;
  }
+
  }
+
 }
