@@ -40,7 +40,7 @@
        </div>
        <div class="operate">
          <hr>
-         <a href="{{ route('topics.edit', $topic->id) }}" class="btn btn-outline-secondary btn-sm" role="">
+         <a href="{{ route('topics.edit', $topic->id) }}" class="btn btn-outline-secondary btn-sm" role="button">
           <i class="far fa-edit"></i> 编辑
          </a>
          <a href="#" class="btn btn-outline-secondary btn-sm" role="button">

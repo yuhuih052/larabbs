@@ -39,12 +39,12 @@
             @include('shared._error')
 
             <div class="form-group">
-              <input class="form-control" type="text" name="title" value="{{ old('title', $topic->title)}}">
+              <input class="form-control" type="text" name="title" value="{{ old('title', $topic->title )}}">
             </div>
               
             <div class="form-group">
               <select class="form-control" name="category_id" required>
-                  <option value="" hidden disabled selected>请选择分类</option>
+                  <option value=""hidden disabled {{ $topic->id ? '' : 'selected' }}>请选择分类</option>
                 @foreach ($categories as $value)
                   <option value="{{ $value->id }}">{{ $value->name }}</option>
                 @endforeach
@@ -52,7 +52,7 @@
             </div>
             
             <div class="form-group">
-               <textarea name="body" class="form-control" id="editor" rows="6" placeholder="请填入至少三个字"></textarea>
+               <textarea name="body" class="form-control" id="editor" rows="6" placeholder="请填入至少三个字" >{{old('body',$topic->body)}}</textarea>
             </div>
 
             <div class="well well-sm">
