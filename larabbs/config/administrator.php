@@ -42,6 +42,13 @@ return array(
             'roles',
             'permissiongs',
         ],
+
+        '内容管理' => [
+            'categories',
+            'topics',
+            'replies',
+        ],
+
     ],
 
     /*
