@@ -9,13 +9,12 @@ use App\Models\User;
 
 class UserObserver
 {
-    public function creating(User $user)
+    public function saving(User $user)
     {
-        //
-    }
+        // 这样写扩展性更高，只有空的时候才指定默认头像
+        if (empty($user->avatar)) {
+            $user->avatar = 'public/uploads/images/玛丽莲梦露.jpg';
+        }
 
-    public function updating(User $user)
-    {
-        //
     }
 }
