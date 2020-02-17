@@ -235,13 +235,13 @@ return [
     'rate_limits' => [
         // 访问频率限制，次数/分钟
         'access' => [
-            'expires' => env('RATE_LIMITS_EXPIRES', 1),
-            'limit'  => env('RATE_LIMITS', 60),
+            'expires' => env('RATE_LIMITS_EXPIRES', 10),
+            'limit'  => env('RATE_LIMITS', 600),
         ],
         // 登录相关，次数/分钟
         'sign' => [
-            'expires' => env('SIGN_RATE_LIMITS_EXPIRES', 1),
-            'limit'  => env('SIGN_RATE_LIMITS', 10),
+            'expires' => env('SIGN_RATE_LIMITS_EXPIRES', 10),
+            'limit'  => env('SIGN_RATE_LIMITS', 100),
         ],
     ],
 
