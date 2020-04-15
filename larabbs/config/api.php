@@ -168,6 +168,7 @@ return [
     */
 
     'auth' => [
+        'jwt' => 'Dinggo\Api\Auth\Provider\JWT',
 
     ],
 
